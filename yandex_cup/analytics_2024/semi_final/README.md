@@ -178,7 +178,7 @@ Route characteristics indicated in the map legend:
 * The caravan can fend off no more than three bandit attacks before its guards are killed, and the caravan is raided.
 </list>
 
-Input data: [A map of the road network between Basra and Damascus, with the probabilities of bandit attacks at intermediate points along the route. The connections between the attack probabilities are represented by pairs of objects on the map, along with a fractional number - if an attack happens at the first location, this number is added to the probability of an attack at the second location](https://github.com/Smipe-a/contests/blob/main/yandex_cup/analytics_2024/semi_final/map)
+Input data: [A map of the road network between Basra and Damascus, with the probabilities of bandit attacks at intermediate points along the route. The connections between the attack probabilities are represented by pairs of objects on the map, along with a fractional number - if an attack happens at the first location, this number is added to the probability of an attack at the second location](https://github.com/Smipe-a/contests/blob/main/yandex_cup/analytics_2024/semi_final/map.txt)
 
 Output data: The maximum probability of successfully traveling from Basra to Damascus, presented as a decimal number rounded to 2 decimal places (e.g., 0.95).
 
