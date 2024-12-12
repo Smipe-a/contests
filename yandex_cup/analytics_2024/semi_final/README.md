@@ -83,11 +83,11 @@ Table 2
     <td>col_0</td>
     <td>col_1</td>
     <td>col_2</td>
-    <td>col_0</td>
-    <td>col_1</td>
-    <td>col_2</td>
-    <td>col_0</td>
-    <td>col_1</td>
+    <td>col_3</td>
+    <td>col_4</td>
+    <td>col_5</td>
+    <td>col_6</td>
+    <td>col_7</td>
   </tr>
   <tr>
     <td>Muniv</td>
@@ -205,7 +205,7 @@ The input format is specified in the example code.
 
 The last line of input contains two zeros (0 and 0), indicating the end of the input
 
-### Input format
+### Input
 For each test case, your program should output `M` lines, each containing a single integer `a` `(0 ≤ a < N)` - the index of the selected robot.
 
 Once your program receives the line ""0 0"", it should terminate and output no further data
@@ -223,7 +223,7 @@ The score for the solution is the fraction of artifacts found by your program ou
 * You found 4 artifacts
 </list>
 The score for this solution will be calculated as:
-$$\frac{4}{0.8*10}=0.5$$
+$\frac{4}{0.8*10}=0.5$
 You are not able to view your score for the solution. The passing score for this task - <b>0.95</b>. If the score is ≥ 0.95, the verdict will be OK; otherwise, the verdict will be WA (Wrong Answer)
 
 <b>Example code</b><i> (the score for this solution is about 0.56)</i><br>
