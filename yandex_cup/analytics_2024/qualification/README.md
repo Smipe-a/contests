@@ -283,9 +283,16 @@ Table merchants (merchants):
 * guild - merchant's guild
 * coef - merchant's amnesty coefficient
 </list>
-1. Determine the guild of merchants with the highest efficiency for the day. Efficiency is defined as the product of:<br>
-Ratio of sales events to purchase events $\frac{sell}{buy}$<br>
-Average amnesty per transaction. Amnesty is calculated as: $\frac{|cost-model\_cost|}{coef}$
+1. Determine the guild of merchants with the highest efficiency for the day. Efficiency is defined as the product of:
+
+Ratio of sales events to purchase events:
+
+$$\frac{sell}{buy}$$
+
+Average amnesty per transaction. Amnesty is calculated as:
+
+$$\frac{|cost-model\_cost|}{coef}$$
+
 2. The efficiency of this guild
 3. Determine the hour during which the members of this guild made the highest number of sales
 

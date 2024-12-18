@@ -223,7 +223,9 @@ The score for the solution is the fraction of artifacts found by your program ou
 * You found 4 artifacts
 </list>
 The score for this solution will be calculated as:
-$\frac{4}{0.8*10}=0.5$
+
+$$\frac{4}{0.8*10}=0.5$$
+
 You are not able to view your score for the solution. The passing score for this task - <b>0.95</b>. If the score is ≥ 0.95, the verdict will be OK; otherwise, the verdict will be WA (Wrong Answer)
 
 <b>Example code</b><i> (the score for this solution is about 0.56)</i><br>
