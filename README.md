@@ -13,6 +13,6 @@
 <img src=./img/young_and_yandex.png/>
 <list>
 
-* Young && Yandex
-    * Intern Week Offer Analytics
+* [Young && Yandex](https://github.com/Smipe-a/contests/tree/main/young_and_yandex)
+    * [Intern Week Offer Analytics](https://github.com/Smipe-a/contests/tree/main/young_and_yandex/intern_week_offer_analytics_2024)
 </list>
