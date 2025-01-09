@@ -14,5 +14,5 @@
 <list>
 
 * Young && Yandex
-    * [Intern Week Offer 2024 Analytics](https://github.com/Smipe-a/contests/tree/main/young_and_yandex/intern_week_offer_analytics_2024)
+    * [Intern Week Offer 2024 Analytics](https://github.com/Smipe-a/contests/tree/main/young_%26%26_yandex/intern_week_offer_analytics_2024)
 </list>
