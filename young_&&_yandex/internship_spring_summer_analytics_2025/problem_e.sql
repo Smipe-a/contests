@@ -21,11 +21,11 @@ SELECT field_date,
        ROUND(AVG(avg_wait_time), 0) AS avg_wait_time
 FROM
     (SELECT DATE(verdict_time) field_date,
-        CAST(strftime('%s', next_verdict_time) - strftime('%s', verdict_time) AS REAL) / 60 avg_wait_time
+            CAST(strftime('%s', next_verdict_time) - strftime('%s', verdict_time) AS REAL) / 60 avg_wait_time
     FROM
         (SELECT verdict, verdict_time,
-            LEAD(verdict) OVER (PARTITION BY campaign_id ORDER BY verdict_time) next_verdict,
-            LEAD(verdict_time) OVER (PARTITION BY campaign_id ORDER BY verdict_time) next_verdict_time
+                LEAD(verdict) OVER (PARTITION BY campaign_id ORDER BY verdict_time) next_verdict,
+                LEAD(verdict_time) OVER (PARTITION BY campaign_id ORDER BY verdict_time) next_verdict_time
         FROM logs)
     WHERE verdict = 'No' AND next_verdict = 'Yes')
 GROUP BY field_date

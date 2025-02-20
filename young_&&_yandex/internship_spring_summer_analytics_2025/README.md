@@ -1,6 +1,106 @@
 # A. Yan in the Gym
 
 # B. Computer Game
+<table border="1">
+<tr>
+    <td></td>
+    <td>All languages</td>
+    <td>Python 3.9 (PyPy 7.3.16)</td>
+  </tr>
+  <tr>
+    <td>Time limit per test</td>
+    <td>1 second</td>
+    <td>1.5 second</td>
+  </tr>
+  <tr>
+    <td>Memory limit per test</td>
+    <td>64Mb</td>
+    <td>1524Mb</td>
+  </tr>
+  <tr>
+    <td>Input</td>
+    <td colspan="2">Standart input or input.txt</td>
+  </tr>
+  <tr>
+    <td>Output</td>
+    <td colspan="2">Standart output or output.txt</td>
+  </tr>
+</table>
+
+Polycarp received an exciting computer game as a birthday gift.
+
+The game consists of $N$ levels. Some levels are connected by $M$ transitions, forming a directed acyclic graph. Completing a level grants a certain non-negative amount of experience points. Some levels have no outgoing transitions - these are the final levels. The game ends when Polycarp completes a final level.
+
+Polycarp is confident that he can reach any level in the game, but he doesn't know the maximum number of experience points he can accumulate before the game ends. Help him determine the answer to this question.
+
+### Input
+The first line contains two integers $N$ and $M$ $(1 \leq N \leq 10^5,~N-1 \leq M \leq 10^6)$ - the number of levels and the number of transitions between them, respectively.
+
+The second line contains $N$ integers $a_i$ $(1 \leq i \leq N,~0 \leq a_i \leq 10^6)$ - the amount of experience points awarded for completing the $i$-th level.
+
+The next $M$ lines describe the transitions between levels in the form of pairs $u_i, v_i$ $(1 \leq u_i, v_i \leq N, u_i \neq v_i)$ - meaning that the $i$-th transition leads from level $u_i$ to level $v_i$.
+
+It is guaranteed that every level in the game is reachable from level 1.
+
+### Output
+Output a single integer - the maximum amount of experience Polycarp can accumulate while playing the game.
+
+### Example 1
+<table border="1">
+  <tr>
+    <td><b>Input</b></td>
+    <td><b>Output</b></td>
+  </tr>
+  <tr>
+    <td>
+<pre>
+1 0
+1
+</pre>
+</td>
+    <td>
+<pre>
+1
+
+</pre>
+    </td>
+  </tr>
+</table>
+
+### Example 2
+<table border="1">
+  <tr>
+    <td><b>Input</b></td>
+    <td><b>Output</b></td>
+  </tr>
+  <tr>
+    <td>
+<pre>
+5 5
+1 2 3 5 4
+1 2
+1 3
+2 4
+3 4
+3 5
+</pre>
+</td>
+    <td>
+<pre>
+9
+<br>
+
+<br>
+
+</pre>
+    </td>
+  </tr>
+</table>
+
+### Notes
+In the first example, the game consists of only one level, so we complete it and immediately finish the game.
+
+In the second example, the optimal order of completing levels is 1, 3, 4. The total experience gained is 1 + 3 + 5 = 9 points.
 
 # C. Curd Bar Day
 
@@ -102,7 +202,7 @@ Let's consider an example:
   </tr>
 </table>
 
-Campaign `1` was in rejection from 2025-01-03 01:12:32 to 2025-01-03 05:10:38, and campaign `2` was in rejection from 2025-01-02 14:28:10 to 2025-01-03 00:47:40. That is, we calculate the waiting time from the last 'No' to the next 'Yes', if it exists
+Campaign `1` was in rejection from 2025-01-03 01:12:32 to 2025-01-03 05:10:38, and campaign `2` was in rejection from 2025-01-02 14:28:10 to 2025-01-03 00:47:40. That is, we calculate the waiting time from the last 'No' to the next 'Yes', if it exists.
 <br>
 
 Write an SQLite query that calculates the average waiting time (in minutes) per day. The result should be a table with two columns: `field_date` and `avg_wait_time` (of type REAL, rounded to the nearest whole number). The output table should be sorted in ascending order by `field_date`
