@@ -104,6 +104,24 @@ In the second example, the optimal order of completing levels is 1, 3, 4. The to
 
 # C. Curd Bar Day
 
+As is well known, on Wednesdays, Yandex offices have the so-called 'Curd Bar Day', when various flavored curd bars are placed at coffee points. Perfectionist Vasya, while walking around the floor, noticed that a small coffee point had 9 curd bars, 4 of which contained condensed milk, while the remaining did not. Vasya then reached the large coffee point and was shocked to find that only 5 bars remained there, with just 2 containing condensed milk. To restore order, Vasya quickly ran back to the small coffee point, grabbed 2 bars, and brought them to the large coffee point, placing them among those already there.
+
+Feeling a sense of accomplishment, Vasya returned to his workplace. However, after a moment of thought, he realized that his actions might have disrupted the "correctness" of the situation, at least from the perspective of his colleague Petya. Petya prefers curd bars with condensed milk but always selects them randomly. At that very moment, Petya set out to pick a bar from the large coffee point.
+
+Now, Vasya is plagued by doubt, as he does not remember exactly which two bars he transferred from one coffee point to the other. To find clarity, he is asking for your help in answering the following probability questions:
+
+1. What is the probability that Petya, selecting a random curd bar, will get one with condensed milk, assuming no one else visited the large coffee point between Vasya and Petya?
+2. What is the probability that Vasya, in his rush, transferred both bars with condensed milk, given that the bar Petya took was with condensed milk (assuming no one else visited the large coffee point between Vasya and Petya)?
+3. What is the probability that Petya, selecting a random curd bar, will get one with condensed milk, given that exactly one person visited the large coffee point between Vasya and Petya and took exactly one bar?
+
+### Output
+In each line of the output, print a single number - the answer rounded to four decimal places according to standard mathematical rounding rules. Decimal fractions must be separated by a dot.
+
+Example output:<br>
+0.0123<br>
+0.3456<br>
+0.6789
+
 # D. Robot Vacuum Cleaner
 
 # E. Waiting Time
@@ -125,8 +143,8 @@ In the second example, the optimal order of completing levels is 1, 3, 4. The to
     <td>Standart output or output.txt</td>
   </tr>
 </table>
-Analyst Ivan works in an ad campaign moderation service. The automated system sends verdicts: Yes (approval) and No (rejection). If a campaign is rejected, the client can file a complaint with support. The campaign may be unblocked if the automation made a mistake.
 
+Analyst Ivan works in an ad campaign moderation service. The automated system sends verdicts: Yes (approval) and No (rejection). If a campaign is rejected, the client can file a complaint with support. The campaign may be unblocked if the automation made a mistake.
 <br>
 
 Ivan wants to analyze the average waiting time for campaign approval by day. For example, campaign `5012025` received a rejection on `2024-10-07 12:46:29` and was later approved on `2024-10-07 15:12:49`. The waiting time is 2 hours, 26 minutes, and 20 seconds.
