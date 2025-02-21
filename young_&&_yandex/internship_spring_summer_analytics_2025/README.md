@@ -1,4 +1,121 @@
 # A. Yan in the Gym
+<table border="1">
+  <tr>
+    <td>Time limit per test</td>
+    <td>0.1 second</td>
+  </tr>
+  <tr>
+    <td>Memory limit per test</td>
+    <td>20Mb</td>
+  </tr>
+  <tr>
+    <td>Input</td>
+    <td>Standart input or input.txt</td>
+  </tr>
+  <tr>
+    <td>Output</td>
+    <td>Standart output or output.txt</td>
+  </tr>
+</table>
+
+In a gym, $N$ free treadmills are arranged in a row. Yan and $K$ of his friends decided to work out today. To avoid disturbing each other, they agreed to occupy treadmills as far apart as possible. Each person chooses a treadmill in the center of the largest available free segment. Since everyone takes a different amount of time to prepare, they occupy the treadmills one by one.
+
+Each person selects a treadmill that maximizes the minimum distance to the nearest occupied treadmills on the left and right. If multiple treadmills meet this condition, one is chosen randomly by Yan. However, if the edge treadmills are still free, they are given priority.
+
+Unfortunately, Yan is slow to get ready and arrives last at the gym (he takes a long time to change). Given $N$ and $K$, determine how many free treadmills remain on both sides of Yan after he occupies his treadmill as the ($K+1$ th) person.
+
+### Input
+The program takes two natural numbers as input $N$ and $K$, where $1 \leq K < N \leq 10^{18}$
+
+### Output
+The program should output two natural numbers in non-decreasing order, representing the number of free treadmills on both sides of Yan.
+
+### Example 1
+<table border="1">
+  <tr>
+    <td><b>Input</b></td>
+    <td><b>Output</b></td>
+  </tr>
+  <tr>
+    <td>
+<pre>
+7 0
+</pre>
+</td>
+    <td>
+<pre>
+0 6
+</pre>
+    </td>
+  </tr>
+</table>
+
+### Example 2
+<table border="1">
+  <tr>
+    <td><b>Input</b></td>
+    <td><b>Output</b></td>
+  </tr>
+  <tr>
+    <td>
+<pre>
+7 1
+</pre>
+</td>
+    <td>
+<pre>
+0 5
+</pre>
+    </td>
+  </tr>
+</table>
+
+### Example 3
+<table border="1">
+  <tr>
+    <td><b>Input</b></td>
+    <td><b>Output</b></td>
+  </tr>
+  <tr>
+    <td>
+<pre>
+8 2
+</pre>
+</td>
+    <td>
+<pre>
+2 3
+</pre>
+    </td>
+  </tr>
+</table>
+
+### Example 4
+<table border="1">
+  <tr>
+    <td><b>Input</b></td>
+    <td><b>Output</b></td>
+  </tr>
+  <tr>
+    <td>
+<pre>
+8 3
+</pre>
+</td>
+    <td>
+<pre>
+1 1
+</pre>
+    </td>
+  </tr>
+</table>
+
+### Notes
+In the first example, Yan occupied the outermost treadmill. There were no treadmills on one side, while N − 1 treadmills remained on the other.
+
+In the second example, Yan again occupied the outermost treadmill, but on the opposite side.
+
+In the third example, Yan chose one of two treadmills with an equal total distance to the occupied treadmills on the left and right.
 
 # B. Computer Game
 <table border="1">
@@ -123,6 +240,94 @@ Example output:<br>
 0.6789
 
 # D. Robot Vacuum Cleaner
+<table border="1">
+  <tr>
+    <td>Time limit per test</td>
+    <td>1 second</td>
+  </tr>
+  <tr>
+    <td>Memory limit per test</td>
+    <td>64Mb</td>
+  </tr>
+  <tr>
+    <td>Input</td>
+    <td>Standart input or input.txt</td>
+  </tr>
+  <tr>
+    <td>Output</td>
+    <td>Standart output or output.txt</td>
+  </tr>
+</table>
+
+You need to develop an algorithm for a new robot vacuum cleaner. You have been provided with an apartment of size N x M cells (width x height) as a testing ground. The apartment contains walls and furniture, which are impassable for the robot. The robot itself occupies one cell.
+
+Write a program that allows the robot to complete its task as quickly as possible, given that it takes x seconds to move to an adjacent cell and y seconds to clean one cell.
+
+### Input
+The input consists of a single line containing four integers: N, M, x, y. Then, a two-dimensional array is provided, where 0 - represents free space, 1 - represents an obstacle wall or furniture.
+
+### Output
+Output a single integer - the minimum time required to clean the apartment.
+
+### Example 1
+<table border="1">
+  <tr>
+    <td><b>Input</b></td>
+    <td><b>Output</b></td>
+  </tr>
+  <tr>
+    <td>
+<pre>
+5 4 1 3
+11111
+10001
+10001
+11111
+</pre>
+</td>
+    <td>
+<pre>
+23
+
+<br>
+
+</pre>
+    </td>
+  </tr>
+</table>
+
+### Example 2
+<table border="1">
+  <tr>
+    <td><b>Input</b></td>
+    <td><b>Output</b></td>
+  </tr>
+  <tr>
+    <td>
+<pre>
+7 5 2 2
+1111111
+1001001
+1000001
+1001001
+1111111
+</pre>
+</td>
+    <td>
+<pre>
+50
+<br>
+
+<br>
+</pre>
+    </td>
+  </tr>
+</table>
+
+### Notes
+1. You can use any free cell as the starting position for the robot.
+2. It is guaranteed that every free cell is reachable.
+
 
 # E. Waiting Time
 <table border="1">
@@ -243,3 +448,61 @@ For the example above, the output will be the following table:
 </table>
 
 # F. Which Flower?
+<table border="1">
+  <tr>
+    <td>Time limit per test</td>
+    <td>5 second</td>
+  </tr>
+  <tr>
+    <td>Memory limit per test</td>
+    <td>244.224609375Mb</td>
+  </tr>
+  <tr>
+    <td>Input</td>
+    <td>Standart input</td>
+  </tr>
+  <tr>
+    <td>Output</td>
+    <td>Standart output</td>
+  </tr>
+</table>
+
+You are an analyst for a flower recognition application. Your task is to evaluate the quality of the classifier. The classifier processes pre-cropped images, each expected to contain 1 flower species. However, cropping errors may result in images that do not contain flowers at all.
+
+You need to calculate the proportion of correctly recognized flowers among all input images that actually contained flowers, taking into account the distribution of flower species among users.
+
+You have two files:
+1. The number of flowers of each type as recognized by the algorithm. Automatically obtained from the application logs over the past month. detection_count.csv with columns: detected_name - flower name as recognized by the classifier, count - number of flowers of this type
+2. Results of manual data labeling on a sample (from a different period). Each row represents an expert validation of the recognition, assigning the correct flower type. detection_quality.csv with columns: detected_name - flower name as recognized by the classifier, human_name - flower name according to manual data labeling (considered the ground truth)
+
+In addition to flower names, the columns detected_name and human_name may contain the entry not_a_flower, indicating that either the algorithm or the human annotator determined that the image does not contain a flower.
+
+You need to reweight the quality assessment results from detection_quality.csv, taking into account the actual class distribution from detection_count.csv.
+
+However, for some flower types, we have very few or no samples at all. In such cases, certain assumptions will need to be made. You will need to perform calculations according to the algorithm outlined below.
+1. Classify flowers into three groups:
+    * not_a_flower - handled separately
+    * popular flowers - those with 10 or more samples where the classifier's prediction matched the human label.
+    * other flowers - those with fewer than 10 samples where the classifier's prediction matched the human label. These are grouped based on the detected flower type
+2. For each group, calculate the average probability that an actual flower was provided as input but the classifier misclassified it into the given group.
+3. Next, calculate the average probability of correct classification. For flowers in the popular group, compute this probability individually for each type. For the other flowers and not_a_flower, compute the average probability across the entire group.
+4. Reweight the monthly classification statistics: consider the probability that a non-flower was provided as input (this should decrease all group probabilities), and factor in the classifier’s accuracy. Compute the final weighted quality score for the user
+
+From last month’s results [detection_count_previous.csv](https://github.com/Smipe-a/contests/blob/main/young_%26%26_yandex/internship_spring_summer_analytics_2025/detection_count_previous.csv), the classifier’s quality score was 0.8613 (use this for debugging).
+
+What will be the weighted quality score for this month (detection_quality.csv remains the same, but the distribution of detected flower frequencies in detection_count.csv is different)?
+
+Write a program that reads [detection_quality.csv](https://github.com/Smipe-a/contests/blob/main/young_%26%26_yandex/internship_spring_summer_analytics_2025/detection_quality.csv) and [detection_count.csv](https://github.com/Smipe-a/contests/blob/main/young_%26%26_yandex/internship_spring_summer_analytics_2025/detection_count.csv), then prints the score with an accuracy of 4 decimal places, without any additional output.
+
+### Input
+month_detected.csv with fields
+* detected_name 
+* count
+
+human_classification.csv with fields
+* detected_name
+* human_name
+
+### Output
+Print the metric rounded to 3 decimal places (rounded to the nearest value).
+For example: 0.123 (instead of 0.122987).
